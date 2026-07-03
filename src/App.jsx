@@ -59,7 +59,7 @@ function App() {
           <p>状態: {isPlaying ? '♪ 再生中...' : '💤 停止中'}</p>
         </div>
 
-        {/* 動画作品セクション（ここがメイン！） */}
+        {/* 動画作品セクション（1本にスッキリ統合！） */}
         <div className="video-section">
           
           {/* メイン動画1 */}
@@ -67,21 +67,20 @@ function App() {
             <div className="video-badge">PICK UP!!</div>
             <h3>【メイン】映像制作・編集 01</h3>
             <div className="video-container">
-              <video src="/movie01.mp4" controls width="100%" style={{ borderRadius: '8px' }} />
+              {/* 大容量対策としてpreload="none"とplaysInlineを追加 */}
+              <video 
+                src="/movie01.mp4" 
+                controls 
+                preload="none"
+                playsInline
+                width="100%" 
+                style={{ borderRadius: '8px', backgroundColor: '#000' }} 
+              />
             </div>
             <div className="aviutl-highlight">
               <strong>使用ソフト: AviUtl</strong>
               <p>AviUtlをメインに使用し、拡張編集機能を駆使したカット編集、エフェクト加工、タイミング調整を行っています。細かいフレーム単位の調整にこだわっています。</p>
             </div>
-          </div>
-
-          {/* サブ動画2 */}
-          <div className="work-card" style={{ marginTop: '20px' }}>
-            <h3>映像制作・編集 02</h3>
-            <div className="video-container">
-              <video src="/movie02.mp4" controls width="100%" style={{ borderRadius: '8px' }} />
-            </div>
-            <p>紹介: 別の構成で制作した映像作品です。</p>
           </div>
 
         </div>

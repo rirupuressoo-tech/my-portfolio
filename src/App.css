@@ -36,7 +36,7 @@ body, .portfolio-container {
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
-  gap: 0; /* ★ここを 0 にすれば隙間がなくなります！ */
+  gap: 0; 
   z-index: 0;
 }
 

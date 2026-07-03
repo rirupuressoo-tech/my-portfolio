@@ -68,7 +68,7 @@ function App() {
               <span className="work-title-accent">イージングによる緩急を意識した、立体感のある3Dモーショングラフィックス</span>
               <strong>使用ソフト: AviUtl</strong>
               <p>AviUtlをメインに使用し、拡張編集機能を駆使したカット編集、エフェクト加工、タイミング調整を行っています。細かいフレーム単位の調整にこだわっています。</p>
-              <a href="https://www.youtube.com/..." target="_blank" rel="noopener noreferrer" className="video-link-button">🎬 映像作品01を視聴する（外部サイト）</a>
+              <a href="https://youtu.be/gfaPyiXgdI0" target="_blank" rel="noopener noreferrer" className="video-link-button">🎬 映像作品01を視聴する（外部サイト）</a>
             </div>
           </div>
 
@@ -78,7 +78,7 @@ function App() {
               <span className="work-title-accent" style={{ color: '#2196f3' }}>バーチャルタレント（友人）の配信切り抜き動画</span>
               <strong>編集時間: 約4〜5時間</strong>
               <p>テンポの良いカット、要点を押さえた見やすいテロップ配置を意識し、短時間でクオリティ高く仕上げるスピード感を重視して制作しました。</p>
-              <a href="https://www.youtube.com/..." target="_blank" rel="noopener noreferrer" className="video-link-button" style={{ backgroundColor: '#2196f3' }}>🎬 映像作品02を視聴する（外部サイト）</a>
+              <a href="https://youtu.be/KPZhORHq2I4" target="_blank" rel="noopener noreferrer" className="video-link-button" style={{ backgroundColor: '#2196f3' }}>🎬 映像作品02を視聴する（外部サイト）</a>
             </div>
           </div>
         </div>

@@ -59,28 +59,44 @@ function App() {
           <p>状態: {isPlaying ? '♪ 再生中...' : '💤 停止中'}</p>
         </div>
 
-        {/* 動画作品セクション（1本にスッキリ統合！） */}
+        {/* 動画作品セクション */}
         <div className="video-section">
+          <h2>VIDEO WORKS</h2>
+          <p style={{ textAlign: 'center', fontSize: '14px', color: '#888', marginBottom: '20px' }}>
+            ※動画は外部サイト（YouTube等）でご覧いただけます。
+          </p>
           
-          {/* メイン動画1 */}
-          <div className="work-card main-video" style={{ marginTop: '30px', border: '2px solid #4caf50' }}>
+          {/* 動画1 */}
+          <div className="work-card main-video" style={{ border: '2px solid #4caf50' }}>
             <div className="video-badge">PICK UP!!</div>
             <h3>【メイン】映像制作・編集 01</h3>
-            <div className="video-container">
-              {/* 大容量対策としてpreload="none"とplaysInlineを追加 */}
-              <video 
-                src="/movie01.mp4" 
-                controls 
-                preload="none"
-                playsInline
-                width="100%" 
-                style={{ borderRadius: '8px', backgroundColor: '#000' }} 
-              />
-            </div>
+            <p style={{ fontWeight: 'bold', color: '#4caf50', margin: '10px 0' }}>
+              イージングによる緩急を意識した、立体感のある3Dモーショングラフィックス
+            </p>
             <div className="aviutl-highlight">
               <strong>使用ソフト: AviUtl</strong>
               <p>AviUtlをメインに使用し、拡張編集機能を駆使したカット編集、エフェクト加工、タイミング調整を行っています。細かいフレーム単位の調整にこだわっています。</p>
             </div>
+            {/* ★ここに動画のURLを入れてね！ */}
+            <a href="https://youtu.be/gfaPyiXgdI0" target="_blank" rel="noopener noreferrer" className="video-link-button">
+              🎬 映像作品01を視聴する（外部サイト）
+            </a>
+          </div>
+
+          {/* 動画2 */}
+          <div className="work-card" style={{ marginTop: '20px' }}>
+            <h3>映像制作・編集 02</h3>
+            <p style={{ fontWeight: 'bold', color: '#2196f3', margin: '10px 0' }}>
+              バーチャルタレント（友人）の配信切り抜き動画
+            </p>
+            <div className="aviutl-highlight" style={{ backgroundColor: '#1a2635' }}>
+              <strong>編集時間: 約4〜5時間</strong>
+              <p>テンポの良いカット、要点を押さえた見やすいテロップ配置を意識し、短時間でクオリティ高く仕上げるスピード感を重視して制作しました。</p>
+            </div>
+            {/* ★ここに動画のURLを入れてね！ */}
+            <a href="https://youtu.be/KPZhORHq2I4" target="_blank" rel="noopener noreferrer" className="video-link-button" style={{ backgroundColor: '#2196f3' }}>
+              🎬 映像作品02を視聴する（外部サイト）
+            </a>
           </div>
 
         </div>

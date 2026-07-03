@@ -1,0 +1,147 @@
+/* 1. サイト全体の背景と文字の色を設定　*/
+.portfolio-container {
+  background-color: #1a1a1a; /* 暗いグレー（ダークモード） `/
+  color: #ffffff;              /*　文字は白 */
+  font-family: 'Noto Sans JP', sans-serif;
+
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box
+}
+
+/* 2. ヘッダーのデザイン　*/
+.site-header {
+  text-align: center;
+  border-bottom: 2px solid #333; /* 下側にうっすら線を引く */
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.site-header h1 {
+  font-size: 2rem;
+  letter-spacing: 4px; /* 文字の間隔を広げてスタイリッシュに */
+}
+
+/* 3. プロフィールと作品一覧の共通設定 */
+.profile0sectiom, .portfolio-section {
+  max-width: 600px;     /* 横幅が広がりすぎないように制限 */
+  margin: 0 auto 40px auto; /* 画面の真ん中に寄せて、下に隙間を作る */
+  background-color: #262626; /* セクションの背景をすこし明るいグレーに */
+  padding: 20px;
+  border-radius: 8px; /* 角を少し丸くする */
+}
+
+.profile-section h2, .portfolio-section h2 {
+  color: #4caf50;      /* 見出しをレトロなグリーンに */
+  border-left: 4px solid #4caf50; /* 左側に緑の縦線を引く */
+  padding-left: 10px;
+  margin-top: 0;
+}
+
+/* 4. 作品カードと再生ボタンのデザイン */
+.work-card {
+  background-color: #4caf50; /* ボタンの背景を緑に */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;          /* マウスを載せたらポインターの形にする */
+  transition: background 0.2; /* 色が変わるときに少しなめらかにする */
+}
+
+/* ボタンにマウスを載せたとき（ホバー）の色　*/
+.play-button:hover {
+  background-color: #4caf50; /* 少し暗い緑にする */
+}
+
+/* 5.　フッターのデザイン */
+.site-header {
+  text-align: center;
+  color: #888888; /* フッターの文字は目立たないようにグレーに */
+  font-size: 0.8rem;
+  margin-top: 60px;
+}
+
+/* トマトの画像を囲む箱の設定 */
+.profilr-avatar-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* App.css の一番下のトマトの設定を、これに上書きしてみてください */
+.pixel-art {
+  width: 128px !important;  /* 一旦確実に大きくするために !important をつけています */
+  height: 128px !important;
+  image-rendering: pixelated; 
+}
+
+/* AviUtl強調用のデザイン */
+.aviutl-highlight {
+  background-color: #1a1a1a;
+  border-radius: 4px;
+  padding: 15px;
+  margin-top: 15px;
+  border-left: 4px solid #4caf50;
+  text-align: left;
+}
+
+.aviutl-highlight strong {
+  color: #4caf50;
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.aviutl-highlight p {
+  font-size: 0.9rem;
+  color: #cccccc;
+  margin: 0;
+}
+
+/* メイン動画を目立たせるためのバッジ */
+.video-badge {
+  background-color: #4caf50;
+  color: white;
+  display: inline-block;
+  padding: 2px 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+/* AviUtl強調用のデザイン */
+.aviutl-highlight {
+  background-color: #1a1a1a;
+  border-radius: 4px;
+  padding: 15px;
+  margin-top: 15px;
+  border-left: 4px solid #4caf50;
+  text-align: left;
+}
+
+.aviutl-highlight strong {
+  color: #4caf50;
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.aviutl-highlight p {
+  font-size: 0.9rem;
+  color: #cccccc;
+  margin: 0;
+}
+
+/* メイン動画を目立たせるためのバッジ */
+.video-badge {
+  background-color: #4caf50;
+  color: white;
+  display: inline-block;
+  padding: 2px 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
